@@ -1,0 +1,27 @@
+#Image-land{
+    padding: 10px; 
+    margin: 10px; 
+    float: right; 
+    width: 250px;
+  }
+  .containers{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+	grid-gap: 0.5em;
+}
+
+.card{
+	height: max-content;
+}
+
+#a{
+  padding-top:61px;
+}
+#image-of-card{
+  padding-top:60px;
+}
+#texto{
+  padding-top:71px;
+}
+#image0{
+  padding-top:60px;

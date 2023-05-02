@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Campusland - @yield('Title')</title>
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="shortcut icon" href="https://yt3.googleusercontent.com/eJG_qiZmgwaP8iEXJqiFZxVKGWJBAwPOpf3JiF2e2-ruu668j-RKXCXwSi7ZdRRhBrPyWW_E=s176-c-k-c0x00ffffff-no-rj"> 
 </head>
 <body>

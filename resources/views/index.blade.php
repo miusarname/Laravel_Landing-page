@@ -1,7 +1,7 @@
 @extends('templates.layaout')
 @section('Title','Bienvenido...')
 @section('content')
-<style>
+  <style>
   #Image-land{
     padding: 10px; 
     margin: 10px; 
@@ -16,7 +16,81 @@
 
 .card{
 	height: max-content;
+}
 
+#a{
+  padding-top:61px;
+}
+#image-of-card{
+  padding-top:60px;
+}
+#texto{
+  padding-top:71px;
+}
+#image0{
+  padding-top:60px;
+}
+footer{
+    margin-top: 50px;
+    background: rgb(159, 138, 208);
+    padding-bottom: 0.1px;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+.contact-us{
+    width: 40%;
+    color: white;
+}
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+.brand+p{
+    font-weight: 500;
+}
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.social-media-icons{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+    color: azure;
+}
+.social-media-icons:hover{
+    background: azure;
+    color: #764ba2; 
+}
+.social-media-icons i{
+    font-size: 30px;
+    line-height: 60px;
+}
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: azure;
+    margin-bottom:  60px;
 }
 </style>
 <section class="hero is-link is-medium">
@@ -93,7 +167,8 @@ Nuestro modelo intensivo de aprendizaje rápido, garantiza que en un máximo de 
     </ul>
       <p>Es totalmente necesario que previo a inicio en CAMPUS hagas estos tres cursos, pero ojo, totalmente terminados, entendidos y practicados, será necesario para tus primeros días de clase.</p>
   </div>
-	<div class="containers">
+	<center>
+    <div class="containers">
     <!-- card-1 -->
   <a>
     <div class="card">
@@ -115,14 +190,14 @@ Nuestro modelo intensivo de aprendizaje rápido, garantiza que en un máximo de 
     <a>
     <div class="card">
 			<div class="card-image">
-				<figure class="image is-1365x767" id="height">
-					<img src="https://1000marcas.net/wp-content/uploads/2020/02/Logotipo-rojo-de-YouTube.png" alt="Placeholder image">
+				<figure class="image is-200x200" id="height">
+					<img src="https://1000marcas.net/wp-content/uploads/2020/02/Logotipo-rojo-de-YouTube.png" alt="Placeholder image" id="image-of-card">
 				</figure>
 			</div>
 			<div class="card-content">
 				<div class="media">
 					<div class="media-content">
-						<p class="title is-4">Curso Básico de Programación</p>
+						<p class="title is-4" id="a">JavaScript desde cero</p>
 					</div>
         </div>
 			</div>
@@ -132,18 +207,63 @@ Nuestro modelo intensivo de aprendizaje rápido, garantiza que en un máximo de 
     <div class="card">
 			<div class="card-image">
 				<figure class="image is-200x200">
-					<img src="https://static.platzi.com/media/avatars/platziteam_8cfe6fc7-1246-4c9a-9f5d-d10d467443ee.png" alt="Placeholder image">
+					<img src="https://strohlsf.com/wp-content/uploads/GoogleDrive/drivelogo@2x.png" alt="Placeholder image" id="image0">
 				</figure>
 			</div>
 			<div class="card-content">
 				<div class="media">
 					<div class="media-content">
-						<p class="title is-4">Curso Básico de Programación</p>
+						<p class="title is-4" id="texto">Vue.js desde cero</p>
 					</div>
         </div>
 			</div>
 		</div>
+    </a>
   </div>
+  </center>
+  </a>
+  <br>
+  <section class="section is-normal">
+     <center>
+      <div class="content is-normal">
+    <h1>Regístrate en 3 pasos</h1>
+    <h2>Registro por primera vez</h2>
+    <p>Comenzar tu sueño de estudiar programación en CAMPUS es muy fácil, regístrate en el siguiente formulario y envíanos tus datos, nuestro personal se comunicará contigo.</p>
+       <button class="button is-success">Registrate</button>
+       <br>
+       <h2>Ayuda de movilidad</h2>
+    <p>Vamos a ayudarte con el transporte mientras demuestres tu compromiso con el Entrenamiento!<br>Queremos saber en donde vives, por favor registra tu ubicación</p>
+       <button class="button is-warning ">Registrar mi ubicación</button>
+  <br>
+      <h3>Y si eres un Camper destacado, por los resultados, velocidad de aprendizaje y compromiso tendrás asignados otros incentivos.</h3>
+       <h2>Agenda tu prueba de conocimiento</h2>
+    <p>Somos un programa integral, velamos por fortalecer cada aspecto en todos los Camper. Te queremos conocer, programa tu prueba presencial lo más pronto posible. No te quedes sin cupo.</p>
+       <button class="button is-danger ">Agendar prueba</button>
+     </div>
+     </center>
+  </section>
 </section>
+<footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">
+                   Campuslands
+                </h2>
+                <p>{Proggrammers lands}</p>
+            </div>
+            <div class="social-media">
+                <a href="" class="social-media-icons">
+                    <i class='bx bxl-facebook-square'></i>
+                </a>
+                <a href="" class="social-media-icons">
+                    <i class='bx bxl-twitter' ></i></i>
+                </a>
+                <a href="" class="social-media-icons">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
       
 @endsection
